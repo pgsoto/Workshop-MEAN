@@ -1,0 +1,16 @@
+sudo apt install mongodb-clients
+
+
+
+npm init
+npm install --save express
+npm install --save mongoose
+npm install --save body-parser
+npm install -g bower
+
+cd app
+
+	bower install angular bootstrap --save
+
+
+npm install cors --save

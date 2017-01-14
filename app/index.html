@@ -1,0 +1,36 @@
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Taller MEAN</title>
+	<link rel="stylesheet"  href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="controlador">
+
+<section>
+	<div class="container">
+		<dir class="row">
+			<dir class="col-md-6">
+				<dir class="contenedor-form">
+					<input type="text" ng-model="name">
+					<input type="button" ng-click="agregar(name)" value="Enviar">
+
+				</dir>
+			</dir>
+		</dir>
+	</div>
+</section>
+
+
+
+	<h2>{{ name }}</h2>
+	<div class="alert alert-success" role="alert">{{ name }}</div>
+	<div class="alert alert-info" role="alert">{{ name }}</div>
+	<div class="alert alert-warning" role="alert">{{ name }}</div>
+	<div class="alert alert-danger" role="alert">{{ name }}</div>
+
+
+
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/controllers/index.js"></script>
+</body>
+</html>
