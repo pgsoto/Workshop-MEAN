@@ -1,4 +1,5 @@
 const Models = require('.././models/model');
+const app = require('../index');
 
 exports.init = (req,res) => {
   res.send('hello workshop mean desde controllers 2017').end();
@@ -10,10 +11,10 @@ exports.create = (req,res) => {
     date: new Date()
   });
 
-data.save((err, result) =>{
+  data.save((err, result) =>{
     if(err) {console.log(err)}
     console.log(result);
-    res.json(result);
+    app.io.sockets.emit('update');
   })
 }
 

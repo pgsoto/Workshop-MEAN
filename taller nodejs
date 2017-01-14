@@ -15,3 +15,4 @@ cd app
 
 npm install cors --save
 npm install --save socket.io
+bower install -save socket.io.client
