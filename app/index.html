@@ -16,22 +16,18 @@
 					<input type="button" ng-click="agregar(name)" value="Enviar" class="btn btn-primary">
 				</dir>
 			</dir>
-			<dir class="col-md-6">
-				<dir class="res" ng-repeat="item in items">
-					<h4>{{item.name}}</h4>
-				</dir>
-			</dir>
 		</dir>
 	</div>
 </section>
 
+	<dir class="col-md-6">
+		<dir class="res" ng-repeat="item in items">
+		 	<ul class="list-group">
+		  		<li class="list-group-item list-group-item-info">{{item.name}}</li>
+			</ul>
+		</dir>
+	</dir>
 
-
-	<h2>{{ name }}</h2>
-	<div class="alert alert-success" role="alert">{{ name }}</div>
-	<div class="alert alert-info" role="alert">{{ name }}</div>
-	<div class="alert alert-warning" role="alert">{{ name }}</div>
-	<div class="alert alert-danger" role="alert">{{ name }}</div>
 
 
 

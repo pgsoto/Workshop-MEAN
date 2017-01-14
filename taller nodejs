@@ -14,3 +14,4 @@ cd app
 
 
 npm install cors --save
+npm install --save socket.io
