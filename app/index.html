@@ -11,9 +11,14 @@
 		<dir class="row">
 			<dir class="col-md-6">
 				<dir class="contenedor-form">
-					<input type="text" ng-model="name">
-					<input type="button" ng-click="agregar(name)" value="Enviar">
-
+					<label for="name">Name</label>
+					<input type="text" ng-model="name" placeholder="Pancracia Condori" required>
+					<input type="button" ng-click="agregar(name)" value="Enviar" class="btn btn-primary">
+				</dir>
+			</dir>
+			<dir class="col-md-6">
+				<dir class="res" ng-repeat="item in items">
+					<h4>{{item.name}}</h4>
 				</dir>
 			</dir>
 		</dir>
